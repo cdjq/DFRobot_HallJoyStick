@@ -1,0 +1,29 @@
+#######################################
+# Syntax Coloring DFRobot_HallJoyStick
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DFRobot_HallJoyStick	KEYWORD1
+DFRobot_HallJoyStick_I2C	KEYWORD1
+DFRobot_HallJoyStick_UART	KEYWORD1
+eHallJoyStickAddress_t	KEYWORD1
+eHallJoyStickKey_t	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+getJoystickXYData	KEYWORD2
+getJoystickZKeyState	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+HALL_JOYSTICK_PID	LITERAL1
+HALL_JOYSTICK_VID	LITERAL1
+HALL_JOYSTICK_UART_BAUD	LITERAL1
