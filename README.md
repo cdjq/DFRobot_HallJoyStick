@@ -87,11 +87,15 @@ SKU: DFR1330
 
 ## Compatibility
 
-| Board | Status | Note |
-|-------|--------|------|
-| Arduino Mega 2560 | I2C passed. UART reads, some frames fail | I2C on SDA 20 / SCL 21. UART on Serial1 RX 19 / TX 18 at 9600 |
-| Arduino UNO | Untested | I2C on A4 / A5, UART on SoftwareSerial RX 10 / TX 11 |
-| ESP32 | Untested | Pass the remapped RX and TX pins to the UART constructor |
+MCU                | Work Well    | Work Wrong   | Untested    | Remarks
+------------------ | :----------: | :----------: | :---------: | :----:
+Arduino Uno        |              |              |      √      |
+Arduino MEGA2560   |      √       |              |             |
+Arduino Leonardo   |              |              |      √      |
+FireBeetle-ESP8266 |              |              |      √      |
+FireBeetle-ESP32   |              |              |      √      |
+FireBeetle-M0      |              |              |      √      |
+Micro:bit          |              |              |      √      |
 
 ## History
 

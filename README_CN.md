@@ -87,11 +87,15 @@ SKU：DFR1330
 
 ## 兼容性
 
-| 主板 | 状态 | 备注 |
-|------|------|------|
-| Arduino Mega 2560 | I2C 已通过。UART 能读到，偶发失败 | I2C 用 SDA 20 / SCL 21。UART 用 Serial1 RX 19 / TX 18，9600 |
-| Arduino UNO | 未测试 | I2C 用 A4 / A5，UART 用 SoftwareSerial RX 10 / TX 11 |
-| ESP32 | 未测试 | UART 构造时传入重映射的 RX 和 TX |
+主控               |  正常运行    |   运行失败    |   未测试    | 备注
+------------------ | :----------: | :----------: | :---------: | :---:
+Arduino Uno        |              |              |      √      |
+Arduino MEGA2560   |      √       |              |             |
+Arduino Leonardo   |              |              |      √      |
+FireBeetle-ESP8266 |              |              |      √      |
+FireBeetle-ESP32   |              |              |      √      |
+FireBeetle-M0      |              |              |      √      |
+Micro:bit          |              |              |      √      |
 
 ## 历史
 
