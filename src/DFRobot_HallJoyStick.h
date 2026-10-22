@@ -47,7 +47,7 @@ typedef enum {
 
 /**
  * @enum eHallJoyStickKey_t
- * @brief Z key value after the firmware converts the active-low pin
+ * @brief Z key value, 0 released and 1 pressed
  */
 typedef enum {
   eHallKeyReleased = 0,  ///< Z released
@@ -95,7 +95,7 @@ public:
    * @fn getJoystickZKeyState
    * @brief Read the Z key
    * @return true when the key is pressed, false when it is released
-   * @n true means pressed. The module key has an external pull-up and the pressed pin level is low; the firmware already converts that into this logic value.
+   * @n true means pressed.
    * @n When getJoystickXYData() has just succeeded, this returns the Z value from that same sample and does not read the bus again.
    * @n A failed read returns false.
    */
@@ -136,7 +136,7 @@ public:
    * @fn getJoystickZKeyState
    * @brief Read the Z key over I2C
    * @return true when the key is pressed, false when it is released
-   * @n true means pressed. The firmware already converts the active-low pin into this logic value.
+   * @n true means pressed.
    * @n When getJoystickXYData() has just succeeded, this returns Z from that same sample and does not read the bus again.
    * @n A failed read returns false.
    */
@@ -201,7 +201,7 @@ public:
    * @fn getJoystickZKeyState
    * @brief Read the Z key over UART
    * @return true when the key is pressed, false when it is released
-   * @n true means pressed. The firmware already converts the active-low pin into this logic value.
+   * @n true means pressed.
    * @n When getJoystickXYData() has just succeeded, this returns Z from that same sample and does not read the bus again.
    * @n A failed read returns false.
    */

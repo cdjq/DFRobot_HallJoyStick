@@ -57,7 +57,7 @@ SKU：DFR1330
    * @fn getJoystickZKeyState
    * @brief 读取 Z 键
    * @return 按下返回 true，松开返回 false
-   * @n true 表示按下。模块按键带外部上拉，按下为低电平，固件已转换成该逻辑值。
+   * @n true 表示按下。
    * @n 若刚刚 getJoystickXYData() 成功，这里返回同一次采样的 Z，不再读总线。
    * @n 读取失败时返回 false。
    */

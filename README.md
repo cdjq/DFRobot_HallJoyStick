@@ -57,7 +57,7 @@ SKU: DFR1330
    * @fn getJoystickZKeyState
    * @brief Read the Z key
    * @return true when the key is pressed, false when it is released
-   * @n true means pressed. The module key has an external pull-up and the pressed pin level is low; the firmware already converts that into this logic value.
+   * @n true means pressed.
    * @n When getJoystickXYData() has just succeeded, this returns the Z value from that same sample and does not read the bus again.
    * @n A failed read returns false.
    */
